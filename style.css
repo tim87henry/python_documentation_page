@@ -1,0 +1,11 @@
+#mainheader {
+    font-size: 20px;
+    text-decoration-style: double;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#subheader {
+    font-size: 18px;
+    text-decoration-style: double;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
