@@ -1,176 +1,513 @@
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet">
-        <title>Python Documentation</title>
-    </head>
-    <body>
-        <main id="main-doc">
-            <section class="main-section" id="Introduction">
-                <header id="mainheader">Introduction</header>
-                <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
-                    <br><br>
-                    It is used for:
-                    <ul>
-                        <li>web development (server-side),</li>
-                        <li>software development,</li>
-                        <li>mathematics,</li>
-                        <li>system scripting.</li>
-                    </ul><br>
-                    What can Python do?
-                    <ul>
-                        <li>Python can be used on a server to create web applications.</li>
-                        <li>Python can be used alongside software to create workflows.</li>
-                        <li>Python can connect to database systems. It can also read and modify files.</li>
-                        <li>Python can be used to handle big data and perform complex mathematics.</li>
-                        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
-                    </ul>
-                    </p><br>
-            </section>
-            <section class="main-section" id="Syntax">
-                <header id="mainheader">Syntax</header>
-                <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:<br><br>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>Python Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header id="navheader">Python Documentation</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#Comments" class="nav-link">Comments</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+            <li><a href="#Operators" class="nav-link">Operators</a></li>
+            <li><a href="#Lists" class="nav-link">Lists</a></li>
+            <li><a href="#Tuples" class="nav-link">Tuples</a></li>
+            <li><a href="#Sets" class="nav-link">Sets</a></li>
+            <li><a href="#Dictionaries" class="nav-link">Dictionaries</a></li>
+            <li><a href="#if_Statements" class="nav-link">If Statements</a></li>
+            <li><a href="#for_Loops" class="nav-link">for Loops</a></li>
+            <li><a href="#Functions" class="nav-link">Functions</a></li>
+            <li><a href="#RegEx" class="nav-link">RegEx</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header id="mainheader">Introduction</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                <br><br>
+                It is used for:
+                <ul>
+                    <li>web development (server-side),</li>
+                    <li>software development,</li>
+                    <li>mathematics,</li>
+                    <li>system scripting.</li>
+                </ul><br>
+                What can Python do?
+                <ul>
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics.</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+            </p><br>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header id="mainheader">Syntax</header>
+            <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command
+                Line:<br><br>
+                <div id="code">
                     <code>>>> print("Hello, World!")<br>
                             Hello, World! 
-                    </code>
-                    <br><br>
-                </p>
-                <header id="subheader">Python Indentation</header>
-                <p>
-                    Indentation refers to the spaces at the beginning of a code line. <br>
-                    Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.<br>
-                    Python uses indentation to indicate a block of code.<br><br>
-                    Python will give you an error if you skip the indentation.<br>
-                    The number of spaces is up to you as a programmer, but it has to be at least one.<br>
-                </p><br>
-            </section>
-            <section class="main-section" id="Comments">
-                <header id="mainheader">Comments</header>
-                <p>
-                    Comments can be used to explain Python code.<br>
-                    Comments can be used to make the code more readable.<br>
-                    Comments can be used to prevent execution when testing code.<br><br>
-                    Comments starts with a #, and Python will ignore them:<br><br>
+                        </code>
+                </div>
+                <br><br>
+            </p>
+            <header id="subheader">Python Indentation</header>
+            <p>
+                Indentation refers to the spaces at the beginning of a code line. <br>
+                Where in other programming languages the indentation in code is for readability only, the indentation in
+                Python is very important.<br>
+                Python uses indentation to indicate a block of code.<br><br>
+                Python will give you an error if you skip the indentation.<br>
+                The number of spaces is up to you as a programmer, but it has to be at least one.<br>
+            </p><br>
+        </section>
+        <section class="main-section" id="Comments">
+            <header id="mainheader">Comments</header>
+            <p>
+                Comments can be used to explain Python code.<br>
+                Comments can be used to make the code more readable.<br>
+                Comments can be used to prevent execution when testing code.<br><br>
+                Comments starts with a #, and Python will ignore them:<br><br>
+                <div id="code">
                     <code>
                             #This is a comment<br>
                             print("Hello, World!")
-                    </code><br><br>
-                    Comments can be placed at the end of a line, and Python will ignore the rest of the line:<br><br>
+                        </code>
+                </div><br><br>
+                Comments can be placed at the end of a line, and Python will ignore the rest of the line:<br><br>
+                <div id="code">
                     <code>
-                            print("Hello, World!") #This is a comment <br>
+                            print("Hello, World!") #This is a comment<br>
+                        </code>
+                </div><br>
+                <header id="subheader">Multiline Comments</header>
+            </p>
+            <p>
+                Python does not really have a syntax for multi line comments.
+                To add a multiline comment you could insert a # for each line:
+            </p><br>
+        </section>
+        <section class="main-section" id="Variables">
+            <header id="mainheader">Variables</header>
+            <p>
+                Variables are containers for storing data values.<br>
+                Unlike other programming languages, Python has no command for declaring a variable.<br>
+                A variable is created the moment you first assign a value to it.<br><br>
+                <div id="code">
+                    <code>
+                            x = 5
+                            y = "John"
+                            print(x)
+                            print(y)
+
+                        </code>
+                </div><br>
+                Variables do not need to be declared with any particular type and can even change type after they have
+                been set.<br>
+                String variables can be declared either by using single or double quotes.<br>
+                A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+                Rules for Python variables:
+                <ul>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+                    </li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header id="mainheader">Data Types</header><br>
+            <header id="subheader">Built-in Data Types</header>
+            <p>
+                In programming, data type is an important concept.<br>
+                Variables can store data of different types, and different types can do different things.<br>
+                Python has the following data types built-in by default, in these categories:<br><br>
+                <table>
+                    <tr>
+                        <td>Text Type:</td>
+                        <td>str</td>
+                    </tr>
+                    <tr>
+                        <td>Numeric Types:</td>
+                        <td>int, float, complex</td>
+                    </tr>
+                    <tr>
+                        <td>Sequence Types:</td>
+                        <td>list, tuple, range</td>
+                    </tr>
+                    <tr>
+                        <td>Mapping Type:</td>
+                        <td>dict</td>
+                    </tr>
+                    <tr>
+                        <td>Set Types:</td>
+                        <td>set, frozenset</td>
+                    </tr>
+                    <tr>
+                        <td>Boolean Type:</td>
+                        <td>bool</td>
+                    </tr>
+                </table>
+                <br>You can get the data type of any object by using the type() function.<br>
+                In Python, the data type is set when you assign a value to a variable.<br>
+            </p>
+        </section>
+        <section class="main-section" id="Operators">
+            <header id="mainheader">Operators</header>
+            <p>
+                Operators are used to perform operations on variables and values.<br>
+                Python divides the operators in the following groups:<br>
+                <ul>
+                    <li>Arithmetic operators</li>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Logical operators</li>
+                    <li>Identity operators</li>
+                    <li>Membership operators</li>
+                    <li>Bitwise operators</li>
+                </ul><br>
+                Arithmetic operators are used with numeric values to perform common mathematical operations<br>
+                Assignment operators are used to assign values to variables.<br>
+                Comparison operators are used to compare two values.<br>
+                Logical operators are used to combine conditional statements.<br>
+            </p><br>
+        </section>
+        <section class="main-section" id="Lists">
+            <header id="mainheader">Lists</header>
+            <br>
+            <header id="subheader">Python Collections</header>
+            <p>
+                There are four collection data types in the Python programming language:
+                <ul>
+                    <li><b>List</b> is a collection which is ordered and changeable. Allows duplicate members.</li>
+                    <li><b>Tuple</b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+                    <li><b>Set</b> is a collection which is unordered and unindexed. No duplicate members.</li>
+                    <li><b>Dictionary</b> is a collection which is unordered, changeable and indexed. No duplicate
+                        members.</li>
+                </ul>
+                <br>When choosing a collection type, it is useful to understand the properties of that type.<br>
+                Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an
+                increase in efficiency or security.
+            </p>
+            <p>
+                You access the list items by referring to the index number. Negative indexing means beginning from the
+                end, -1 refers to the last item, -2 refers to the second last item etc.
+                You can specify a range of indexes by specifying where to start and where to end the range.
+                When specifying a range, the return value will be a new list with the specified items.
+                By leaving out the start value, the range will start at the first item.
+                By leaving out the end value, the range will go on to the end of the list.
+            </p>
+        </section>
+        <section class="main-section" id="Tuples">
+            <header id="mainheader">Tuples</header>
+            <p>
+                A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round
+                brackets.<br>
+                You can access tuple items by referring to the index number, inside square brackets:<br>
+            </p>
+            <div id="code">
+                <code>
+                        thistuple = ("apple", "banana", "cherry")
+                        print(thistuple[1])
+                        thistuple = ("apple", "banana", "cherry")
+                        print(thistuple[-1])
+
                     </code>
-                    <header id="subheader">Multiline Comments</header>
-                </p>
-                <p>
-                    Python does not really have a syntax for multi line comments.
-                    To add a multiline comment you could insert a # for each line:
-                </p><br>
-            </section>
-            <section class="main-section" id="Variables">
-                <header id="mainheader">Variables</header>
-                <p>
-                    Variables are containers for storing data values.<br>
-                    Unlike other programming languages, Python has no command for declaring a variable.<br>
-                    A variable is created the moment you first assign a value to it.<br><br>
-                    <code>
-                        x = 5<br>
-                        y = "John"<br>
-                        print(x)<br>
-                        print(y)<br>
-                    </code><br>
-                    Variables do not need to be declared with any particular type and can even change type after they have been set.<br>
-                    String variables can be declared either by using single or double quotes.<br>
-                    A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
-                    <ul>
-                        <li>A variable name must start with a letter or the underscore character</li>
-                        <li>A variable name cannot start with a number</li>
-                        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
-                        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
-                    </ul>
-                </p>
-            </section>
-            <section class="main-section" id="Data_Types">
-                <header id="mainheader">Data Types</header><br>
-                <header id="subheader">Built-in Data Types</header>
-                <p>
-                    In programming, data type is an important concept.<br>
-                    Variables can store data of different types, and different types can do different things.<br>
-                    Python has the following data types built-in by default, in these categories:<br><br>
-                    <table>
-                        <tr><td>Text Type:</td><td>str</td></tr>
-                        <tr><td>Numeric Types:</td><td>int, float, complex</td></tr>
-                        <tr><td>Sequence Types:</td><td>list, tuple, range</td></tr>
-                        <tr><td>Mapping Type:</td><td>dict</td></tr>
-                        <tr><td>Set Types:</td><td>set, frozenset</td></tr>
-                        <tr><td>Boolean Type:</td><td>bool</td></tr>
-                    </table>
-                    <br>You can get the data type of any object by using the type() function.<br>
-                    In Python, the data type is set when you assign a value to a variable.<br>
-                </p>
-            </section>
-            <section class="main-section" id="Operators">
-                <header id="mainheader">Operators</header>
-                <p>
-                    Operators are used to perform operations on variables and values.<br>
-                    Python divides the operators in the following groups:<br>
-                    <ul>
-                        <li>Arithmetic operators</li>
-                        <li>Assignment operators</li>
-                        <li>Comparison operators</li>
-                        <li>Logical operators</li>
-                        <li>Identity operators</li>
-                        <li>Membership operators</li>
-                        <li>Bitwise operators</li>
-                    </ul><br>
-                    Arithmetic operators are used with numeric values to perform common mathematical operations<br>
-                    Assignment operators are used to assign values to variables.<br>
-                    Comparison operators are used to compare two values.<br>
-                    Logical operators are used to combine conditional statements.<br>
-                </p><br>
-            </section>
-            <section class="main-section" id="Lists">
-                <header id="mainheader">Lists</header>
+            </div>
+            <p>
+                You can specify a range of indexes by specifying where to start and where to end the range.
+                When specifying a range, the return value will be a new tuple with the specified items.
+                Specify negative indexes if you want to start the search from the end of the tuple.<br><br>
+                Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also
+                is called.<br>
+                But there is a workaround. You can convert the tuple into a list, change the list, and convert the list
+                back into a tuple.<br><br>
+                You can loop through the tuple items by using a for loop.<br>
+                To determine if a specified item is present in a tuple use the in keyword. <br>
+                To determine how many items a tuple has, use the len() method. Once a tuple is created, you cannot add
+                items to it. Tuples are unchangeable.
+
+            </p>
+        </section>
+        <section class="main-section" id="Sets">
+            <header id="mainheader">Sets</header>
+            <p>
+                A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+                You cannot access items in a set by referring to an index, since sets are unordered the items has no
+                index.
+                But you can loop through the set items using a for loop, or ask if a specified value is present in a
+                set, by using the in keyword.<br>
+                Once a set is created, you cannot change its items, but you can add new items.<br><br>
+                To add one item to a set use the add() method.
+                To add more than one item to a set use the update() method. To determine how many items a set has, use
+                the len() method.
+            </p>
+            <div id="code">
+                <code>
+                    thisset = {"apple", "banana", "cherry"}
+                    print(thisset) 
+                    thisset = {"apple", "banana", "cherry"}
+                    for x in thisset:
+                        print(x)
+                    thisset = {"apple", "banana", "cherry"}
+                    print("banana" in thisset) 
+                    thisset = {"apple", "banana", "cherry"}
+                    thisset.add("orange")
+                    print(thisset) 
+                    thisset = {"apple", "banana", "cherry"}
+                    thisset.update(["orange", "mango", "grapes"])
+                    print(thisset)
+
+                </code>
+            </div>
+            The following methods are used on sets:
+            <ul>
+                <li>len() to find the number of items on the list</li>
+                <li>remove() to remove an item</li>
+                <li>pop() to remove the last item</li>
+                <li>clear() to empty the set</li>
+                <li>del to delete the list</li>
+                <li>union() to join to sets</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Dictionaries">
+            <header id="mainheader">Dictionaries</header>
+            <p>
+                A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.<br>
+                You can access the items of a dictionary by referring to its key name, inside square brackets.<br>
+                There is also a method called get() that will give you the same result.<br>
+                You can change the value of a specific item by referring to its key name. You can loop through a dictionary by using a for loop. When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.<br>
+                To determine if a specified key is present in a dictionary use the in keyword. To determine how many items (key-value pairs) a dictionary has, use the len() method. <br>
+                Adding an item to the dictionary is done by using a new index key and assigning a value to it.<br>
+                There are several methods to remove items from a dictionary:
+            </p>
+            <ul>
+                <li>The pop() method removes the item with the specified key name</li>
+                <li>The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)</li>
+                <li>The del keyword removes the item with the specified key name</li>
+                <li>The clear() method empties the dictionary</li>
+            </ul>
+            <br>
+            <div id="code">
+                <code>
+                    thisdict =	{
+                        "brand": "Ford",
+                        "model": "Mustang",
+                        "year": 1964
+                    }
+                    thisdict.pop("model")
+                    print(thisdict) 
+
+                    thisdict =	{
+                        "brand": "Ford",
+                        "model": "Mustang",
+                        "year": 1964
+                    }
+                    thisdict.popitem()
+                    print(thisdict) 
+
+                    thisdict =	{
+                        "brand": "Ford",
+                        "model": "Mustang",
+                        "year": 1964
+                    }
+                    del thisdict["model"]
+                    print(thisdict) 
+
+                </code>
+            </div>
+            <br><br>
+        </section>
+        <section class="main-section" id="if_Statements">
+            <header id="mainheader">if Statements</header>
+            <p>
+                Python supports the usual logical conditions from mathematics:
+            </p>
+            <ul>
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less than: a < b</li>
+                <li>Less than or equal to: a <= b</li>
+                <li>Greater than: a > b</li>
+                <li>Greater than or equal to: a >= b</li>
+            </ul>
+            <p>
+                These conditions can be used in several ways, most commonly in "if statements" and loops. An "if statement" is written by using the if keyword.<br>
+                Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose. <br>
+                The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".<br>
+                The else keyword catches anything which isn't caught by the preceding conditions.<br>
+                You can also have an else without the elif:
                 <br>
-                <header id="subheader">Python Collections</header>
-                <p>
-                    There are four collection data types in the Python programming language:
-                    <ul>
-                        <li><b>List</b> is a collection which is ordered and changeable. Allows duplicate members.</li>
-                        <li><b>Tuple</b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
-                        <li><b>Set</b> is a collection which is unordered and unindexed. No duplicate members.</li>
-                        <li><b>Dictionary</b> is a collection which is unordered, changeable and indexed. No duplicate members.</li>
-                    </ul>
-                    <br>When choosing a collection type, it is useful to understand the properties of that type.<br>
-                    Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.
-                </p>
-            </section>
-            <section class="main-section" id="Tuples">
-                <header>Tuples</header>
-            </section>
-            <section class="main-section" id="Sets">
-                <header>Sets</header>
-            </section>
-            <section class="main-section" id="Dictionaries">
-                <header>Dictionaries</header>
-            </section>
-            <section class="main-section" id="if_Statements">
-                <header>if Statements</header>
-            </section>
-            <section class="main-section" id="for_Loops">
-                <header>for Loops</header>
-            </section>
-            <section class="main-section" id="Functions">
-                <header>Functions</header>
-            </section>
-            <section class="main-section" id="Lambda_expressions">
-                <header>Lambda expressions</header>
-            </section>
-            <section class="main-section" id="Arrays">
-                <header>Arrays</header>
-            </section>
-            <section class="main-section" id="RegEx">
-                <header>RegEx</header>
-            </section>
-        </main>
-    </body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+                <div id="code">
+                    <code>
+                        a = 200
+                        b = 33
+                        if b > a:
+                            print("b is greater than a")
+                        else:
+                            print("b is not greater than a")
+
+                    </code>
+                </div>
+                <br>If you have only one statement to execute, you can put it on the same line as the if statement. If you have only one statement to execute, one for if, and one for else, you can put it all on the same line.
+
+            </p><br>
+        </section>
+        <section class="main-section" id="for_Loops">
+            <header id="mainheader">for Loops</header>
+            <p>
+                A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).<br><br>
+                This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.<br>
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.<br>
+                The for loop does not require an indexing variable to set beforehand.<br>
+            </p>
+            <div id="code">
+                <code>
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                        print(x)
+                        
+                </code>
+            </div>
+            <br><br>
+            <header id="subheader">The break and continue Statements</header>
+            <p>
+                With the break statement we can stop the loop before it has looped through all the items.<br>
+                With the continue statement we can stop the current iteration of the loop, and continue with the next.<br>
+            </p>
+            <div id="code">
+                <code>
+                    # Exit the loop when x is "banana", but this time the break comes before the print 
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                        if x == "banana":
+                            break
+                        print(x)
+
+                    # Do not print banana
+                    fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                        if x == "banana":
+                            continue
+                        print(x)
+
+                </code>
+            </div>
+            <br><br>
+        </section>
+        <section class="main-section" id="Functions">
+            <header id="mainheader">Functions</header>
+            <p>
+                A function is a block of code which only runs when it is called.<br>
+                You can pass data, known as parameters, into a function. A function can return data as a result.<br>
+                In Python a function is defined using the def keyword. To call a function, use the function name followed by parenthesis.
+            </p>
+            <header id="subheader">Arguments</header>
+            <p>
+                Information can be passed into functions as arguments.
+                Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.<br>
+                The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name: <br>
+            </p>
+            <div id="code">
+                <code>
+                    def my_function(fname):
+                    print(fname + " Refsnes")
+                
+                    my_function("Emil")
+                    my_function("Tobias")
+                    my_function("Linus") 
+
+                </code>
+            </div>
+            <p>
+                By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less. <br>
+                If you try to call the function with 1 or 3 arguments, you will get an error.<br>
+                If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition. This way the function will receive a tuple of arguments, and can access the items accordingly.<br>
+            </p>
+            <p>
+                You can also send arguments with the key = value syntax. This way the order of the arguments does not matter.<br>
+                If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.<br>
+                You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function. If you send a List as an argument, it will still be a List when it reaches the function.
+                <br>
+            </p>
+            <header id="subheader">Return Values and Recursion</header>
+            <p>
+                To let a function return a value, use the return statement. function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.<br>
+                Python also accepts function recursion, which means a defined function can call itself.<br>
+                Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.<br>
+                The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.<br>
+                In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).<br>
+                To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.
+            </p>
+            <br>
+            <div id="code">
+                <code>
+                    def tri_recursion(k):
+                        if(k > 0):
+                          result = k + tri_recursion(k - 1)
+                          print(result)
+                        else:
+                          result = 0
+                        return result
+                      
+                    print("\n\nRecursion Example Results")
+                    tri_recursion(6)
+
+                </code>
+            </div>
+            <br><br>
+        </section>
+        <section class="main-section" id="RegEx">
+            <header id="mainheader">RegEx</header>
+            <p>
+                A RegEx, or Regular Expression, is a sequence of characters that forms a search pattern. RegEx can be used to check if a string contains the specified search pattern. <br>
+                Python has a built-in package called re, which can be used to work with Regular Expressions. When you have imported the re module, you can start using regular expressions. <br><br>
+                For example, to search the string to see if it starts with "The" and ends with "Spain":<br>
+            </p>
+            <div id="code">
+                <code>
+                    import re
+
+                    txt = "The rain in Spain"
+                    x = re.search("^The.*Spain$", txt) 
+
+                </code>
+            </div><br>
+            <header id="subheader">RegEx Functions</header>
+            <p>The re module offers a set of functions that allows us to search a string for a match:</p>
+            <table>
+                <tr>
+                    <th>Function</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>findall</td>
+                    <td>Returns a list containing all matches</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>Returns a Match object if there is a match anywhere in the string</td>
+                </tr>
+                <tr>
+                    <td>split</td>
+                    <td>Returns a list where the string has been split at each match</td>
+                </tr>
+                <tr>
+                    <td>sub</td>
+                    <td>Replaces one or many matches with a string</td>
+                </tr>
+            </table>
+            <br><br>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
