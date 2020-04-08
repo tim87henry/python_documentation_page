@@ -1,17 +1,6 @@
 .nav-link {
     text-decoration: none;
-    color: rgb(30, 104, 100);
-}
-
-.nav-link:hover {
-    color: rgb(6, 37, 6);
-}
-
-@media only screen {
-    #navbar a li{
-        display: block;;
-        width: 300px;
-    }
+    color: black;
 }
 
 #navbar {
@@ -19,6 +8,7 @@
     width: 250px;
     height: 100%;
     overflow: auto;
+    background: #f1f1f1;
 }
 
 #navheader {
@@ -26,9 +16,22 @@
     font-size: 1.5em;
 }
 
-#navbar li{
-    list-style: none;
-    height: 40px;
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#navbar li a {
+    display: block;
+    padding: 5px 5px;
+    height: 35px;
+}
+
+#navbar li a:hover {
+    background: #555;
+    color: white;
 }
 
 #main-doc{
@@ -52,5 +55,9 @@
     white-space: pre-line;
     width: 50%;
     margin-left: 20px;
-    background: lightsteelblue;
+    background: rgb(212, 212, 212);
+}
+
+code {
+    font-family: 'Cousine', monospace;
 }
