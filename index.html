@@ -1,7 +1,10 @@
 <html>
 <head>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet"> 
     <title>Python Documentation</title>
     <style>
         @media only screen {
@@ -12,7 +15,7 @@
                 min-width: 250px;
                 height: 100%;
                 overflow: auto;
-                background: #f1f1f1;
+                background: rgb(156, 191, 226);
             }
         }
     </style>
@@ -64,13 +67,11 @@
             <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command
                 Line:<br><br>
                 <div id="code">
-                    <code>
-                        >>> print("Hello, World!")<br>
+                    <code>>>> print("Hello, World!")
                             Hello, World! 
-
                         </code>
                 </div>
-                <br><br>
+                <br>
             </p>
             <header id="subheader">Python Indentation</header>
             <p>
@@ -90,18 +91,13 @@
                 Comments can be used to prevent execution when testing code.<br><br>
                 Comments starts with a #, and Python will ignore them:<br><br>
                 <div id="code">
-                    <code>
-                            #This is a comment<br>
+                    <code> #This is a comment
                             print("Hello, World!")
-
                         </code>
                 </div><br><br>
                 Comments can be placed at the end of a line, and Python will ignore the rest of the line:<br><br>
                 <div id="code">
-                    <code>
-                            print("Hello, World!") #This is a comment
-
-                        </code>
+                    <code>print("Hello, World!") #This is a comment </code>
                 </div><br>
                 <header id="subheader">Multiline Comments</header>
             </p>
@@ -117,12 +113,10 @@
                 Unlike other programming languages, Python has no command for declaring a variable.<br>
                 A variable is created the moment you first assign a value to it.<br><br>
                 <div id="code">
-                    <code>
-                            x = 5
+                    <code>  x = 5
                             y = "John"
                             print(x)
                             print(y)
-
                         </code>
                 </div><br>
                 Variables do not need to be declared with any particular type and can even change type after they have
@@ -137,7 +131,7 @@
                     </li>
                     <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
                 </ul>
-            </p>
+            </p><br>
         </section>
         <section class="main-section" id="Data_Types">
             <header id="mainheader">Data Types</header><br>
@@ -146,7 +140,7 @@
                 In programming, data type is an important concept.<br>
                 Variables can store data of different types, and different types can do different things.<br>
                 Python has the following data types built-in by default, in these categories:<br><br>
-                <table>
+                <table id="datatypes">
                     <tr>
                         <td>Text Type:</td>
                         <td>str</td>
@@ -174,7 +168,7 @@
                 </table>
                 <br>You can get the data type of any object by using the type() function.<br>
                 In Python, the data type is set when you assign a value to a variable.<br>
-            </p>
+            </p><br>
         </section>
         <section class="main-section" id="Operators">
             <header id="mainheader">Operators</header>
@@ -220,7 +214,7 @@
                 When specifying a range, the return value will be a new list with the specified items.
                 By leaving out the start value, the range will start at the first item.
                 By leaving out the end value, the range will go on to the end of the list.
-            </p>
+            </p><br>
         </section>
         <section class="main-section" id="Tuples">
             <header id="mainheader">Tuples</header>
@@ -230,12 +224,10 @@
                 You can access tuple items by referring to the index number, inside square brackets:<br>
             </p>
             <div id="code">
-                <code>
-                        thistuple = ("apple", "banana", "cherry")
+                <code>  thistuple = ("apple", "banana", "cherry")
                         print(thistuple[1])
                         thistuple = ("apple", "banana", "cherry")
                         print(thistuple[-1])
-
                     </code>
             </div>
             <p>
@@ -251,7 +243,7 @@
                 To determine how many items a tuple has, use the len() method. Once a tuple is created, you cannot add
                 items to it. Tuples are unchangeable.
 
-            </p>
+            </p><br>
         </section>
         <section class="main-section" id="Sets">
             <header id="mainheader">Sets</header>
@@ -267,8 +259,7 @@
                 the len() method.
             </p>
             <div id="code">
-                <code>
-                    thisset = {"apple", "banana", "cherry"}
+                <code>thisset = {"apple", "banana", "cherry"}
                     print(thisset) 
                     thisset = {"apple", "banana", "cherry"}
                     for x in thisset:
@@ -281,9 +272,8 @@
                     thisset = {"apple", "banana", "cherry"}
                     thisset.update(["orange", "mango", "grapes"])
                     print(thisset)
-
                 </code>
-            </div>
+            </div><br>
             The following methods are used on sets:
             <ul>
                 <li>len() to find the number of items on the list</li>
@@ -292,7 +282,7 @@
                 <li>clear() to empty the set</li>
                 <li>del to delete the list</li>
                 <li>union() to join to sets</li>
-            </ul>
+            </ul><br>
         </section>
         <section class="main-section" id="Dictionaries">
             <header id="mainheader">Dictionaries</header>
@@ -313,8 +303,7 @@
             </ul>
             <br>
             <div id="code">
-                <code>
-                    thisdict =	{
+                <code>  thisdict =	{
                         "brand": "Ford",
                         "model": "Mustang",
                         "year": 1964
@@ -337,7 +326,6 @@
                     }
                     del thisdict["model"]
                     print(thisdict) 
-
                 </code>
             </div>
             <br><br>
@@ -363,14 +351,12 @@
                 You can also have an else without the elif:
                 <br>
                 <div id="code">
-                    <code>
-                        a = 200
+                    <code>a = 200
                         b = 33
                         if b > a:
                             print("b is greater than a")
                         else:
                             print("b is not greater than a")
-
                     </code>
                 </div>
                 <br>If you have only one statement to execute, you can put it on the same line as the if statement. If you have only one statement to execute, one for if, and one for else, you can put it all on the same line.
@@ -386,11 +372,9 @@
                 The for loop does not require an indexing variable to set beforehand.<br>
             </p>
             <div id="code">
-                <code>
-                    fruits = ["apple", "banana", "cherry"]
+                <code>fruits = ["apple", "banana", "cherry"]
                     for x in fruits:
-                        print(x)
-                        
+                        print(x)  
                 </code>
             </div>
             <br><br>
@@ -400,8 +384,7 @@
                 With the continue statement we can stop the current iteration of the loop, and continue with the next.<br>
             </p>
             <div id="code">
-                <code>
-                    # Exit the loop when x is "banana", but this time the break comes before the print 
+                <code># Exit the loop when x is "banana", but this time the break comes before the print 
                     fruits = ["apple", "banana", "cherry"]
                     for x in fruits:
                         if x == "banana":
@@ -414,7 +397,6 @@
                         if x == "banana":
                             continue
                         print(x)
-
                 </code>
             </div>
             <br><br>
@@ -433,14 +415,12 @@
                 The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name: <br>
             </p>
             <div id="code">
-                <code>
-                    def my_function(fname):
+                <code>def my_function(fname):
                     print(fname + " Refsnes")
                 
                     my_function("Emil")
                     my_function("Tobias")
                     my_function("Linus") 
-
                 </code>
             </div>
             <p>
@@ -465,8 +445,7 @@
             </p>
             <br>
             <div id="code">
-                <code>
-                    def tri_recursion(k):
+                <code>def tri_recursion(k):
                         if(k > 0):
                           result = k + tri_recursion(k - 1)
                           print(result)
@@ -476,7 +455,6 @@
                       
                     print("\n\nRecursion Example Results")
                     tri_recursion(6)
-
                 </code>
             </div>
             <br><br>
@@ -489,17 +467,15 @@
                 For example, to search the string to see if it starts with "The" and ends with "Spain":<br>
             </p>
             <div id="code">
-                <code>
-                    import re
+                <code>import re
 
                     txt = "The rain in Spain"
                     x = re.search("^The.*Spain$", txt) 
-
                 </code>
             </div><br>
             <header id="subheader">RegEx Functions</header>
             <p>The re module offers a set of functions that allows us to search a string for a match:</p>
-            <table>
+            <table id="regexp">
                 <tr>
                     <th>Function</th>
                     <th>Description</th>
@@ -525,6 +501,6 @@
         </section>
     </main>
 </body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 </html>

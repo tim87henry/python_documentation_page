@@ -5,21 +5,26 @@
 
 #navbar {
     position: fixed;
-    width: 250px;
+    width: 300px;
     height: 100%;
     overflow: auto;
     background: #f1f1f1;
 }
 
 #navheader {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    padding: 8px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.6em;
+    border-left-color: rgb(80, 120, 231);
+    border-left-style: solid;
+    border-left-width: 5px;
+    text-align: center;
 }
 
 #navbar ul {
     list-style-type: none;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0;
 }
 
@@ -27,37 +32,54 @@
     display: block;
     padding: 5px 5px;
     height: 35px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 #navbar li a:hover {
-    background: #555;
+    background:rgb(80, 120, 231);
     color: white;
 }
 
 #main-doc{
     position: absolute;
-    margin-left: 270px;
+    margin-left: 320px;
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
 }
 
 #mainheader {
-    font-size: 20px;
+    font-size: 24px;
     text-decoration-style: double;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Monda', sans-serif;
 }
 
 #subheader {
     font-size: 18px;
     text-decoration-style: double;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Monda', sans-serif;
 }
 
 #code {
     white-space: pre-line;
     width: 50%;
     margin-left: 20px;
-    background: rgb(212, 212, 212);
+    background: rgb(177, 215, 236);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 code {
     font-family: 'Cousine', monospace;
+    font-size: 14px;
+}
+
+table,td,th {
+    border: black;
+    border-style: outset;
+}
+
+table {
+    border-collapse: collapse;
 }
